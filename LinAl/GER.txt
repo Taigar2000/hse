@@ -86,7 +86,8 @@ $dim Im Q + dim Ker Q = 4$. \\
 \end{pmatrix}$ 
  = 1747480, то $Rg Q \geq 3$Значит ранга СЛАУ $= 3$, и СЛАУ содержит только одну свободную переменную, а следовательно ФСР состоит из 1-го вектора. \\
 Следовательно, $dim$ пространства решений СЛАУ $ = 1$, и $dim Ker Q = 1$. \\
-$dim Im Q = dim V - dim Ker Q = 4 - 1 = 3$Ответ: \\
+$dim Im Q = dim V - dim Ker Q = 4 - 1 = 3$ \\
+Ответ: \\
 $\begin{pmatrix} 
 \frac{575}{79} & \frac{-618}{79} & \frac{-663}{79} & \frac{-617}{79} \\ 
 \frac{-244}{79} & \frac{290}{79} & \frac{351}{79} & \frac{164}{79} \\ 
@@ -96,3 +97,24 @@ $\begin{pmatrix}
 \\
 Размерность ядра = 1 \\
 Размерность образа = 1 \\
+N2 Найдём собственные значения \\
+$\chi_A (\lambda) = det(A-\lambda E) = \begin{vmatrix} 
+      9-\lambda &               1 &               0 &               0 \\ 
+            -43 &      -6-\lambda &               1 &               0 \\ 
+           -125 &             -32 &       9-\lambda &               0 \\ 
+           -205 &             -55 &              10 &       4-\lambda \\ 
+\end{vmatrix} 
+ = (4-\lambda) \cdot (\begin{vmatrix} 
+      9-\lambda &               1 &               0 \\ 
+            -43 &      -6-\lambda &               1 \\ 
+           -125 &             -32 &       9-\lambda \\ 
+\end{vmatrix} 
+ = (4-\lambda) \cdot ( (9-\lambda) \cdot \begin{vmatrix} 
+     -6-\lambda &               1 \\ 
+            -32 &       9-\lambda \\ 
+\end{vmatrix} 
+ - \begin{vmatrix} 
+            -43 &               1 \\ 
+           -125 &       9-\lambda \\ 
+\end{vmatrix} 
+) = (4-\lambda) \cdot ( (9-\lambda) \cdot ( (-6-\lambda) \cdot (9-\lambda) + 32 ) + 43 \cdot (9-\lambda) - 125 ) 
